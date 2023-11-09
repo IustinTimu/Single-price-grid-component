@@ -1,0 +1,144 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Cyan2:rgb(74, 190, 189);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    color:var(--Light-Gray);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Gray);
+}
+.card{
+    box-shadow:hsl(0, 0%, 0%,.4)  20px 20px 60px;
+    border-radius: .5rem;
+    width: 650px ;
+    overflow: hidden;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+}
+.upper-section{
+    padding: 2rem 2rem 2rem 2rem;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+}
+.upper-section h1{
+    color: var(--Cyan);
+    font-size: 24px;
+}
+.upper-section h2{
+    color: var(--Bright-Yellow);
+    font-size: 17px;
+}
+.upper-section p{
+    color:var(--Grayish-Blue);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+.lower-section{
+    height: 250px;
+    display: flex;
+}
+.left-section{
+    padding: 3rem 2rem 1rem 2rem;
+    width: 50%;
+    background-color: var(--Cyan);
+    display:flex;
+    flex-direction: column;   
+}
+.left-section h1{
+    letter-spacing: .1rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.spam1{
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 1rem;
+    text-align: center;
+}
+.spam2{
+   color: var(--Light-Gray);
+   opacity: .6; 
+   font-weight: 400;
+   letter-spacing: .1rem;
+   font-size: 14px;
+   position: relative;
+   top: -.3rem;
+}
+.left-section p{
+    margin-top: .7rem;
+    margin-bottom: 1.5rem;
+    font-weight: 100;
+    font-size: 13px;
+    letter-spacing: .05rem;
+}
+button{
+    color: var(--Light-Gray);
+    background-color: var(--Bright-Yellow);
+    border: none;
+    border-radius: .3rem;
+    padding: 1rem 2rem 1rem 2rem;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: .05rem;
+}
+.right-section{
+    padding: 2.5rem 2rem 1rem 2rem;
+    width: 50%;
+    background-color: var(--Cyan2);
+}
+.right-section h2{
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+.right-section p{
+    margin-top: 1rem;
+    color: var(--Light-Gray);
+    opacity: .5;
+    padding-bottom: .6rem;
+    line-height: 1.3rem;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 560px)
+{
+    body {
+        max-height: fit-content;
+        max-width: fit-content;
+      }
+      .card {
+        max-width:fit-content;
+        margin: 1rem 1rem 1rem 1rem ;
+      }
+      .card-container {
+        flex-direction: column;
+      }
+      .upper-section{
+        height: 25%;
+      }
+      .lower-section{
+        flex-direction: column;
+        height: 75%;
+        width: 200%
+      }
+}
